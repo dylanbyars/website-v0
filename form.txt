@@ -1,7 +1,0 @@
-<h1 class="blurb">let's chat</h1>
-<form action="#" method="post">
-  <input class="client-name form-control" type="text" name="client-name" value="" placeholder="NAME">
-  <input class="client-email form-control" type="email" name="client-email" value="" placeholder="EMAIL" required>
-  <input class="client-message form-control" type="textarea" name="client-message" value="" placeholder="MESSAGE">
-  <button type="button" name="button">SEND</button>
-</form>
