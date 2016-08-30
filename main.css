@@ -1,0 +1,433 @@
+/* ==========================================================================
+   Hello! Welcome to the style sheet for my website!
+   I was going to minify this to save a few kbs but figured you, valued reader, would want to actually read this stuff if you bothered to crack this bit open.
+
+   Thanks for taking a look! I will admit that I'm new to the web development game but I'm extremely eager to learn. I'm a fast learner, I love telling computers what to do, and I can cook a mean plate of nachos.
+
+   I'm currently searching for a Junior front end developer position. If you think I'd make a good addition to your team, you're probably right!
+
+   Send me an email at dylan@dylanbyars.com or write a message in a bottle, seal the bottle carefully, toss it into the ocean, then go out and pick it up because the ocean is already way too jammed with garbage. Then email me.
+
+   Hope to hear from you soon!
+
+  - Dylan
+   ========================================================================== */
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+html {
+  color: #04151F;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Cairo', sans-serif; }
+
+/*
+ * Remove text-shadow in selection highlight:
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Custom styles -- Mobile-First Organization
+   ========================================================================== */
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #A8AEC1; }
+
+.above {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60%;
+  width: 90%;
+  color: #04151F; }
+
+header > .name {
+  font-size: 13vw;
+  font-family: 'Space Mono', monospace; }
+
+header > .job {
+  font-size: 7vw; }
+
+.web {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90vw;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  height: 30vh; }
+
+.web__item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.web__item img {
+  width: 16vw;
+  max-width: 135px; }
+
+.web__item p {
+  font-size: 1.2em;
+  opacity: 0;
+  transition: 200ms; }
+
+#skills {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.section__header {
+  font-size: 1.8em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #ccc; }
+
+#widget {
+  width: 90%;
+  height: 80%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+#technologies {
+  height: 100%;
+  width: 18%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5vw;
+  line-height: 0; }
+
+#bars {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.bar {
+  height: calc(70vh / 16);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0;
+  transition: 1650ms; }
+
+.read {
+  width: 12vw;
+  background-color: #7E7F9A; }
+
+.fiddled {
+  width: 24vw;
+  background-color: #EB9486; }
+
+.learning {
+  width: 36vw;
+  background-color: #FFCF56; }
+
+.cozy {
+  width: 48vw;
+  background-color: #B8E1FF; }
+
+.virtuoso {
+  width: 60vw;
+  background-color: #BAFF29; }
+
+#key {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.9em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  height: 20vh;
+  padding: 3vw;
+  background-color: #04151F;
+  border-radius: 3px;
+  line-height: 0; }
+
+.virtuoso--color {
+  color: #BAFF29; }
+
+.cozy--color {
+  color: #B8E1FF; }
+
+.learning--color {
+  color: #FFCF56; }
+
+.fiddled--color {
+  color: #EB9486; }
+
+.read--color {
+  color: #7E7F9A; }
+
+#resume {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  max-width: 700px; }
+
+.gigs {
+  margin-bottom: 3vh; }
+
+.gig__genre {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.gig {
+  width: 95%; }
+
+.gig__title {
+  margin: 0; }
+
+.gig__company {
+  margin: 0; }
+
+.gig__description {
+  list-style: none;
+  padding: 0; }
+  .gig__description li {
+    margin-bottom: 3vh; }
+  .gig__description a {
+    text-decoration: none;
+    color: #222; }
+  .gig__description a:hover {
+    color: goldenrod; }
+
+#contact {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5vh 0;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.envelope {
+  border-radius: 10px;
+  height: 100px;
+  padding: 0 10px;
+  background-color: #B8E1FF;
+  box-shadow: 0px 7px 10px 1px rgba(50, 50, 50, 0.77);
+  transition: 200ms; }
+
+.envelope:active {
+  box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.66); }
+
+#quotes {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  text-align: center; }
+
+.quote {
+  margin-bottom: 1vh;
+  font-size: 3vw; }
+
+.quote::first-letter {
+  font-size: 140%; }
+
+.author {
+  margin: 0 0 3vh;
+  font-size: 3.4vw; }
+
+footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.stealit {
+  font-size: .2em;
+  margin: 1vh 3vw; }
+
+.toTheTop {
+  justify-self: flex-end;
+  width: 10vw;
+  margin-bottom: 3vh; }
+
+/* ==========================================================================
+    Media Queries for Responsive Design
+   ========================================================================== */
+@media only screen and (min-width: 720px) {
+  header > .name {
+    font-size: 6em; }
+  header > .job {
+    font-size: 3em; }
+  .web__item:hover p {
+    opacity: 1; }
+  #contact:hover {
+    box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.66); }
+  .quote {
+    font-size: 13.5px; }
+  .author {
+    font-size: 14px; }
+  .toTheTop {
+    width: 50px; } }

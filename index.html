@@ -1,40 +1,41 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Dylan Byars | Web Developer</title>
         <meta name="description" content="The official homepage for the real Dylan Byars">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="./img/rocket.svg">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link href="https://fonts.googleapis.com/css?family=Cairo|Space+Mono" rel="stylesheet">
-    </head>
+    <link href="./main.css" rel="stylesheet"></head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-      <div id="top" class="above">
+      <section id="top" class="above">
         <header>
           <h1 class="name">Dylan Byars</h1>
           <h2 class="job">Frontend Web Developer</h2>
         </header>
         <section class="web">
-          <div class="web-item">
+          <div class="web__item">
             <a href="http://www.codepen.io/dylanbyars"><img src="./img/codepen-logo.png"></a>
             <p>Codepen</p>
           </div>
-          <div class="web-item">
+          <div class="web__item">
             <a href="https://www.linkedin.com/in/dylanbyars"><img src="./img/linkedin-logo.png"></a>
             <p>LinkedIn</p>
           </div>
-          <div class="web-item">
+          <div class="web__item">
             <a href="http://www.github.com/dbyars"><img src="./img/github-logo.png"></a>
             <p>Github</p>
           </div>
         </section>
-      </div>
+      </section>
       <section id="skills">
-        <h2 class="section__header">Skills</h2>
+        <h1 class="section__header">Skills</h1>
         <div id="widget">
           <div id="technologies">
             <p>HTML5</p>
@@ -77,9 +78,10 @@
           </div>
         </div>
       </section>
-      <section class="resume">
+      <section id="resume">
+        <h1 class="section__header">Experience</h1>
         <div class="gigs">
-          <h2 class="section__header">Technology</h2>
+          <h2 class="gig__genre">Technology</h2>
           <div class="gig">
             <h3 class="gig__title">Data Collection Engineer</h3>
             <h5 class="gig__company">Leidos</h5>
@@ -110,7 +112,7 @@
           </div>
         </div>
         <div class="gigs">
-          <h2 class="section__header">Service</h2>
+          <h2 class="gig__genre">Service</h2>
           <div class="gig">
             <h3 class="gig__title">Manager | Host | Cook</h3>
             <h5 class="gig__company">Xenia's</h5>
@@ -141,7 +143,7 @@
           </div>
         </div>
         <div class="gigs">
-          <h2 class="section__header">Outdoors</h2>
+          <h2 class="gig__genre">Outdoors</h2>
           <div class="gig">
             <h3 class="gig__title">Camp Counselor | Medical Director</h3>
             <h5 class="gig__company">Stone Mountain Adventures</h5>
@@ -162,18 +164,24 @@
           </div>
         </div>
       </section>
+      <section id="contact">
+        <a href="mailto:dylan@dylanbyars.com">
+          <img class="envelope" src="./img/envelope.svg" alt="email me" />
+        </a>
+      </section>
+      <section id="quotes">
+        <p class="quote"></p>
+        <p class="author"></p>
+      </section>
+      <a href="#top"><img class="toTheTop" src="./img/rocket.svg" alt="blast off to the top of the page"></a>
       <footer>
-        <section class="quotes">
-          <p class="quote"></p>
-          <p class="author"></p>
-        </section>
-        <a href="#top"><img class="toTheTop" src="./img/rocket.svg" alt="me"></a>
+        <span class="stealit">© Dylan Byars -- 2016</span>
       </footer>
       <script src="http://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-      <!-- Google Analytics -->
+      <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
       <script>
           window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-          ga('create','UA-83304510-1','auto');ga('send','pageview')
+          ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
       </script>
       <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     <script type="text/javascript" src="bundle.js"></script></body>
