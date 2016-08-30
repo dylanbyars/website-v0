@@ -5,14 +5,11 @@
    Thanks for taking a look! I will admit that I'm new to the web development game but I'm extremely eager to learn. I'm a fast learner, I love telling computers what to do, and I can cook a mean plate of nachos.
 
    I'm currently searching for a Junior front end developer position. If you think I'd make a good addition to your team, you're probably right!
-
    Send me an email at dylan@dylanbyars.com or write a message in a bottle, seal the bottle carefully, toss it into the ocean, then go out and pick it up because the ocean is already way too jammed with garbage. Then email me.
-
    Hope to hear from you soon!
-
+   
   - Dylan
    ========================================================================== */
-
 /* ==========================================================================
    Base styles
    ========================================================================== */
@@ -24,6 +21,10 @@ html {
 
 /*
  * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
  */
 ::-moz-selection {
   background: #b3d4fc;
@@ -47,6 +48,7 @@ hr {
 /*
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 audio,
 canvas,
@@ -276,7 +278,7 @@ header > .job {
   position: absolute;
   bottom: 0;
   right: 0;
-  font-size: 0.9em;
+  font-size: 0.75em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
